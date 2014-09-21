@@ -1,0 +1,8 @@
+- @images.each do |image, comment|
+  .row{ :style => "margin-bottom:200px" }
+    .col-xs-12
+      // FIXME: link to photo (rest of this code should be in an 'image' template)
+      %img.img-responsive.center-block{ :src => "/images/album/#{image}" }
+
+      - if ! comment.nil?
+        %p.text-center{ :style => "color:#999" }= comment
