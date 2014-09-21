@@ -23,5 +23,5 @@ end
 
 get '/' do
   @images = YAML.load_file File.join(File.dirname(__FILE__), "public/images.yaml")
-  haml :index
+  haml :album
 end

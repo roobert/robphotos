@@ -14,9 +14,12 @@
   %body
     = haml :header
 
-    = yield
+    .container
+      .row
+        = yield
+
+    %script{ :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" }
 
     // http://getbootstrap.com/customize/?id=606cdc48ef23dab1de83
     %script{ :src => "/js/bootstrap.min.js" }
 
-    %script{ :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" }
